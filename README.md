@@ -5,9 +5,10 @@ This project implements N-gram, Feedforward Neural Network (FFN), and LSTM model
 **Note:** This repository only contains necessary for a minimal prototype. As training was conducted on Kaggle and Google Colab to utilize GPU resources, training scripts of Word2Vec, FFN and LSTM can be found in the links below.
 - [Word2Vec](https://colab.research.google.com/drive/1lO-mX_WCrWglw0LX1S1QZjh97Ok4hjBc?usp=sharing)
 - [FFN](https://colab.research.google.com/drive/1SvY10YrdAKN4nOJfAM4eMYHaIlb2yMro?usp=sharing)
-- [LSTM](https://bit.ly/3Hkn0Z0)
+- [LSTM](https://bit.ly/3Hkn0Z0)  
 
 The trained models can be found [here](https://husteduvn-my.sharepoint.com/:f:/g/personal/duc_nm225437_sis_hust_edu_vn/Ep3UlaSY2BVKtzYl_XyDPNQBnSPyKRHjmmPJy8krgtV56Q?e=XE2q72).
+
 
 The original dataset can be found [here](https://digitalcommons.mtu.edu/mobiletext/).
 
@@ -39,8 +40,11 @@ The original dataset can be found [here](https://digitalcommons.mtu.edu/mobilete
     ```
 
 4. **Download model files**:
+
     Download the file `models` from this [link](https://husteduvn-my.sharepoint.com/:f:/g/personal/duc_nm225437_sis_hust_edu_vn/Ep3UlaSY2BVKtzYl_XyDPNQBnSPyKRHjmmPJy8krgtV56Q?e=XE2q72) and unzip if necessary, then place the unzipped `models` file to the `internship-20242` directory.
     Refer to the expected folder structure below.
+
+    **Note**: When unzipping, make sure that the `.pkl` and `.keras` files are indeed placed in `/models`, not `models/models`.
     
 
 ## Usage
@@ -67,6 +71,7 @@ The original dataset can be found [here](https://digitalcommons.mtu.edu/mobilete
 internship-20242/
 │
 ├── requirements.txt                  # Listing dependencies
+├── demo.png                          # App.py demo
 ├── app.py                            # Flask app logic
 ├── FFN.py                            # FFN model and prediction logic for app
 ├── LSTM.py                           # LSTM model and prediction logic for app
