@@ -7,6 +7,7 @@ This project implements N-gram, Feedforward Neural Network (FFN), and LSTM model
 - [FFN](https://colab.research.google.com/drive/1SvY10YrdAKN4nOJfAM4eMYHaIlb2yMro?usp=sharing)
 - [LSTM](https://bit.ly/3Hkn0Z0)  
 The trained models can be found [here](https://husteduvn-my.sharepoint.com/:f:/g/personal/duc_nm225437_sis_hust_edu_vn/Ep3UlaSY2BVKtzYl_XyDPNQBnSPyKRHjmmPJy8krgtV56Q?e=XE2q72).
+
 The original dataset can be found [here](https://digitalcommons.mtu.edu/mobiletext/).
 
 ## Features
