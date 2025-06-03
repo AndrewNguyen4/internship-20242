@@ -53,7 +53,7 @@ The original dataset can be found [here](https://digitalcommons.mtu.edu/mobilete
     python app.py
     ```
 
-2. Open your browser and visit http://127.0.0.1:5000.
+2. After the application has loaded, open your browser and visit http://127.0.0.1:5000.
     
 3. Use the input box to type a sentence. The system:
 
@@ -64,6 +64,11 @@ The original dataset can be found [here](https://digitalcommons.mtu.edu/mobilete
 - Allows switching between N-gram, FFN, and LSTM models.
 
 4. You can click on suggestions to insert them into the input box.
+
+Once opened, the application window should look like this:
+    
+
+![A screenshot of the application](demo.png)
 	   
 ## Folder Structure
 
