@@ -2,10 +2,12 @@
 
 This project implements N-gram, Feedforward Neural Network (FFN), and LSTM models to predict and suggest the next word in the context of mobile phone messages. It includes a prototype user interface for real-time interaction built using Flask.
 
-**Note:** As training was conducted on Kaggle and Google Colab to utilize GPU resources, training scripts of Word2Vec, FFN and LSTM are not reflected in this repository. To see them, follow the links below.
-- Word2Vec: https://colab.research.google.com/drive/1lO-mX_WCrWglw0LX1S1QZjh97Ok4hjBc?usp=sharing
-- FFN: https://colab.research.google.com/drive/1SvY10YrdAKN4nOJfAM4eMYHaIlb2yMro?usp=sharing
-- LSTM: https://bit.ly/3Hkn0Z0
+**Note:** This repository only contains necessary for a minimal prototype. As training was conducted on Kaggle and Google Colab to utilize GPU resources, training scripts of Word2Vec, FFN and LSTM can be found in the links below.
+- [Word2Vec](https://colab.research.google.com/drive/1lO-mX_WCrWglw0LX1S1QZjh97Ok4hjBc?usp=sharing)
+- [FFN](https://colab.research.google.com/drive/1SvY10YrdAKN4nOJfAM4eMYHaIlb2yMro?usp=sharing)
+- [LSTM](https://bit.ly/3Hkn0Z0)  
+The trained models can be found [here](https://husteduvn-my.sharepoint.com/:f:/g/personal/duc_nm225437_sis_hust_edu_vn/Ep3UlaSY2BVKtzYl_XyDPNQBnSPyKRHjmmPJy8krgtV56Q?e=XE2q72).
+The original dataset can be found [here](https://digitalcommons.mtu.edu/mobiletext/).
 
 ## Features
 
@@ -33,6 +35,10 @@ This project implements N-gram, Feedforward Neural Network (FFN), and LSTM model
     ```sh
     pip install -r requirements.txt
     ```
+
+4. **Download model files**:
+    Download the file `models` from this [link](https://husteduvn-my.sharepoint.com/:f:/g/personal/duc_nm225437_sis_hust_edu_vn/Ep3UlaSY2BVKtzYl_XyDPNQBnSPyKRHjmmPJy8krgtV56Q?e=XE2q72) and unzip if necessary, then place the unzipped `models` file to the `internship-20242` directory.
+    Refer to the expected folder structure below.
     
 
 ## Usage
@@ -63,15 +69,10 @@ internship-20242/
 ├── FFN.py                            # FFN model and prediction logic for app
 ├── LSTM.py                           # LSTM model and prediction logic for app
 ├── skip_gram.py                      # SkipGram model
-├── LSTM-no_embs
-├── LSTM-pretrained_embs-not_frozen
-├── LSTM-pretrained_embs-frozen       # Contain LSTM models in Additional experiments
-├── mobiletext/                       # Data for training and testing
+├── models                            # Contain model data
+├── mobiletext/                       # Data for training and testing (not uploaded due to size constraints)
 ├── ngram/                            # N-gram predictor implementation
-├── templates/
-│   └── index.html                    # Web interface
-├── word2vec_model_tokenizer.pkl      # Tokenizer (shared across FFN/LSTM)
-├── word2vec_model_finetuned.keras    # Learned Embeddings from Word2Vec
-├── ffn_nextword_model.keras          # Trained FFN weights
-└── ngram_model_3.pkl                 # Trained 3-gram model
+└── templates/
+    └── index.html                    # Web interface
+
 ```
